@@ -43,29 +43,44 @@ farma.appendChild(zvire);
 // Co kdybychom meli program, kde tech zvirat je vic - objekt krava, objekt ovce, objekt prase...
 // Musela bych pro kazdy objekt mit samostatnou promennou...resenim je pole objektu...zvirata, kde zvire = zvirata[]
 
-// let poleZvirat = [
-//     {
-//         jmeno: 'Husa',
-//         foto: 'obrazky/husa.jpg'
-//     },
-//     {
-//         jmeno: 'Kočka',
-//         foto: 'obrazky/kocka.jpg'
-//     },
-//     {
-//         jmeno: 'Kravička',
-//         foto: 'obrazky/krava.jpg'
-//     },
-//     {
-//         jmeno: 'Kůň',
-//         foto: 'obrazky/kun.jpg'
-//     },
-//     {
-//         jmeno: 'Ovce',
-//         foto: 'obrazky/Ovce.jpg'
-//     },
-//     {
-//         jmeno: 'Pes',
-//         foto: 'obrazky/pes.jpg'
-//     }
-// ];
+const poleZvirat = [
+    {
+        jmeno: 'Husa',
+        foto: 'obrazky/husa.jpg'
+    },
+    {
+        jmeno: 'Kocka',
+        foto: 'obrazky/kocka.jpg'
+    },
+    {
+        jmeno: 'Kun',
+        foto: 'obrazky/kun.jpg'
+    },
+    {
+        jmeno: 'Ovce',
+        foto: 'obrazky/Ovce.jpg'
+    },
+    {
+        jmeno: 'Pes',
+        foto: 'obrazky/pes.jpg'
+    }
+];
+
+for (let i = 0; i < poleZvirat.length; i++) {
+    const zvire = document.createElement('div');
+    zvire.classList.add('zvire');
+
+    const fotoZvirete = document.createElement('img');
+    fotoZvirete.classList.add('foto');
+    fotoZvirete.src = poleZvirat[i].foto;
+    fotoZvirete.alt = poleZvirat[i].jmeno;
+
+    const jmenoZvirete = document.createElement('div');
+    jmenoZvirete.classList.add('jmeno');
+    jmenoZvirete.textContent = poleZvirat[i].jmeno;
+
+    zvire.appendChild(fotoZvirete);
+    zvire.appendChild(jmenoZvirete);
+
+    farma.appendChild(zvire);
+}
