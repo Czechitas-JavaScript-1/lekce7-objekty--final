@@ -41,4 +41,31 @@ farma.appendChild(zvire);
 
 // Bonus
 // Co kdybychom meli program, kde tech zvirat je vic - objekt krava, objekt ovce, objekt prase...
-// Musela bych pro kazdy objekt mit samostatnou promennou...jde to lépe?
+// Musela bych pro kazdy objekt mit samostatnou promennou...resenim je pole objektu...zvirata, kde zvire = zvirata[]
+
+// let poleZvirat = [
+//     {
+//         jmeno: 'Husa',
+//         foto: 'obrazky/husa.jpg'
+//     },
+//     {
+//         jmeno: 'Kočka',
+//         foto: 'obrazky/kocka.jpg'
+//     },
+//     {
+//         jmeno: 'Kravička',
+//         foto: 'obrazky/krava.jpg'
+//     },
+//     {
+//         jmeno: 'Kůň',
+//         foto: 'obrazky/kun.jpg'
+//     },
+//     {
+//         jmeno: 'Ovce',
+//         foto: 'obrazky/Ovce.jpg'
+//     },
+//     {
+//         jmeno: 'Pes',
+//         foto: 'obrazky/pes.jpg'
+//     }
+// ];
