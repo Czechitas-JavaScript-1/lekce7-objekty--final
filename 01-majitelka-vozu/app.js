@@ -18,3 +18,8 @@ auto['znacka'] = 'Škoda';
 let majitelka = auto.majitel.jmeno + ' ' + auto.majitel.prijmeni;
 let znacka = auto.znacka;
 let spz = auto.spz;
+
+// Vypsani uzivateli
+document.querySelector('#majitelka').innerHTML = majitelka;
+document.querySelector('#znacka').innerHTML = znacka;
+document.querySelector('#spz').innerHTML = spz;
